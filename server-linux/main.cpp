@@ -20,10 +20,6 @@
 #include <signal.h>
 #include <time.h>
 
-static bool stop = false;
-
-
-
 int main(int argc, const char * argv[]) {
     // insert code here...
    

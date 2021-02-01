@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C64D1D4625BD72B700E74726 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C64D1D4525BD72B700E74726 /* main.cpp */; };
+		C64D1D5025C8653400E74726 /* epoll.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C64D1D4E25C8653400E74726 /* epoll.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		C64D1D4225BD72B700E74726 /* server-linux */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "server-linux"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C64D1D4525BD72B700E74726 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C64D1D4E25C8653400E74726 /* epoll.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = epoll.cpp; sourceTree = "<group>"; };
+		C64D1D4F25C8653400E74726 /* epoll.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = epoll.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +60,19 @@
 		C64D1D4425BD72B700E74726 /* server-linux */ = {
 			isa = PBXGroup;
 			children = (
+				C64D1D4D25C864EC00E74726 /* server */,
 				C64D1D4525BD72B700E74726 /* main.cpp */,
 			);
 			path = "server-linux";
+			sourceTree = "<group>";
+		};
+		C64D1D4D25C864EC00E74726 /* server */ = {
+			isa = PBXGroup;
+			children = (
+				C64D1D4E25C8653400E74726 /* epoll.cpp */,
+				C64D1D4F25C8653400E74726 /* epoll.hpp */,
+			);
+			path = server;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,6 +131,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C64D1D5025C8653400E74726 /* epoll.cpp in Sources */,
 				C64D1D4625BD72B700E74726 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
